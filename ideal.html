@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+</head>
+
+<body>
+    <header>
+        <div>
+            <button class ="viewHighscore"> View High Scores</button> 
+        </div>
+        <div>
+            <p> Time: <span class ="timeLeft">xxx</span></p>
+        </div>
+    </header>
+
+
+    <div class="main"> <!--main container-->
+        <div class="container">
+            <p class="Display">Quiz Time!!!</p>
+            <p class="FscoreDisplay"></p>
+            <p class="Initialsarea"></p>
+            <textarea id="enterInitials"></textarea>
+            <button class="start-quiz">Start Quiz</button>
+            <button id="answer1"></button>
+            <button id="answer2"></button>
+            <button id="answer3"></button>
+            <button id="answer4"></button>
+            <button class="submitScore"></button>
+        </div>
+        <div class="CorrectWrongGrid"></div>
+        <p id="CorrectWrong"></p>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
