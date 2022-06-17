@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <title>Code Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+</head>
+
+<body>
+    <header>
+        <div>
+            <button class ="viewHighscore"> View High Scores</button> 
+        </div>
+        <div>
+            <p> Time: <span class ="timeLeft">x</span></p>
+        </div>
+    </header>
+
+
+    <div class="main"> <!--main container-->
+        <div class="container">
+            <p class="Quetions">Quiz Time!!!</p>
+            <p class="Finalscore"></p>
+            <p class="Initialsarea"></p>
+            <textarea class="btn" id="enterInitials"></textarea>
+            <button class="btn" id="start-quiz">Start Quiz</button>
+            <button class="btn" id="answer1"></button>
+            <button class="btn" id="answer2"></button>
+            <button class="btn" id="answer3"></button>
+            <button class="btn" id="answer4"></button>
+            <button class="btn" id="submitScore"></button>
+        </div>
+        <div class="CorrectWrongarea"></div>
+        <p id="CorrectWrong"></p>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>

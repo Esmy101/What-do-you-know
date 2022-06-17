@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #000;
+    --light: #f8f8f8;
+    --dgreen:#006400;
+    --lgreen: #008000; 
+    --pgreen: #8FBC8F;
+}
+
+body {
+    font-family: 'Caveat';
+    font-size: 22px;
+    background-color: var(--light);
+}
+
+header {
+    display: flex; /*will display children elements and flex will wrap and puy space in between*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--lgreen);
+    height: 60px;
+    font-size: 2px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Fascinate';
+    font-size: 22px;
+    list-style: none;
+}
+
+.viewHighscore {
+    border-radius: 10px;
+    background-color: var(--light);
+    border: 0;
+    outline: 0;
+    color: var(--lgreen);
+    font-family: 'Fascinate';
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 12px;
+    border: 0;
+    outline: 0;
+    background-color: var(--dgreen);
+    color: var(--light);
+    font-family: 'Caveat';
+    font-size: 10px;
+}
+
+.main{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Caveat';
+    font-size: 22px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px 10px;
+    font-family: 'Fascinate';
+    font-size: 22px;
+}
+
+.Questions{
+    text-align: center;
+    align-self: baseline;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+    place-self: center;
+    font-size: 30px;
+}
+
+.Finalscore {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    font-size: 15px;
+}
+
+.Initialsarea {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+}
+
+#enterInitials {
+    grid-column: 2 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+    resize: none;
+}
+
+#start-quiz {
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: var(--dgreen);
+    place-self: center;
+    color: var(--light);
+    font-family: 'Fascinate';
+    font-size: 15px;
+}
+
+
+#answer1,
+#answer2,
+#answer3,
+#answer4 {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: var(--dgreen);
+    color: var(--light);
+    font-family: 'Caveat';
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.btn:hover {
+    background-color: var(--lgreen);
+}
+
+
+#submitScore{
+    grid-column: 3 / span 1;
+    grid-row: 7 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: var(--dgreen);
+    color: var(--light);
+    font-family: 'Fascinate';
+    font-size: 15px;
+}
+
+.CorrectWrongarea { /*row of 4 with space in between*/
+    display: grid;
+    grid-template-columns: 4fr;  
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px 10px; 
+    font-family: 'Caveat';
+    font-size: 22px;
+}
+
+#CorrectWrong {
+    text-align: left;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+
