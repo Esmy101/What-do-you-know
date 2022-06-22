@@ -8,13 +8,13 @@
     --dark: #000;
     --light: #f8f8f8;
     --dgreen:#006400;
-    --lgreen: #008000; 
+    --lgreen: #008000;
     --pgreen: #8FBC8F;
 }
 
 body {
     font-family: 'Caveat';
-    font-size: 22px;
+    font-size: 50px;
     background-color: var(--light);
 }
 
@@ -29,7 +29,7 @@ header {
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Fascinate';
-    font-size: 22px;
+    font-size: 20px;
     list-style: none;
 }
 
@@ -43,14 +43,14 @@ header {
     font-size: 20px;
 }
 
-.btn {
+.btn  {
     border-radius: 12px;
     border: 0;
     outline: 0;
     background-color: var(--dgreen);
     color: var(--light);
-    font-family: 'Caveat';
-    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
 
 .main{
@@ -61,8 +61,8 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
-    font-family: 'Caveat';
-    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
 }
 
 .container {
@@ -70,8 +70,8 @@ header {
     grid-template-columns: repeat(2, 1fr) 2fr 1fr;
     grid-template-rows: repeat(10, 1fr);
     gap: 10px 10px;
-    font-family: 'Fascinate';
-    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
 
 .Questions{
@@ -82,17 +82,28 @@ header {
     place-self: center;
     font-size: 30px;
 }
+.Rules{
+    text-align: center;
+    align-self: baseline;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+    place-self: center;
+    font-size: 30px;
+}
 
 .Finalscore {
-    grid-column: 1 / span 2;
-    grid-row: 6 / span 1;
-    font-size: 15px;
+    text-align: center;
+    align-self: baseline;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+    place-self: center;
+    font-size: 25px;
 }
 
 .Initialsarea {
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 #enterInitials {
@@ -100,39 +111,48 @@ header {
     grid-row: 7 / span 1;
     font-size: 15px;
     resize: none;
+    background-color: var(--pgreen);
 }
 
 #start-quiz {
     grid-column: 2 / span 2;
-    grid-row: 5 / span 1;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10%;
-    border: 0;
-    outline: 0; 
-    background-color: var(--dgreen);
-    place-self: center;
-    color: var(--light);
-    font-family: 'Fascinate';
-    font-size: 15px;
-}
-
-
-#answer1,
-#answer2,
-#answer3,
-#answer4 {
-    grid-column: 1 / span 2;
     grid-row: 6 / span 1;
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; 
+    outline: 0;
     background-color: var(--dgreen);
+    place-self: center;
     color: var(--light);
-    font-family: 'Caveat';
-    font-size: 15px;
-    margin-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
+
+
+#answer1{
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+
+}
+#answer2{
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+}
+#answer3{
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 1;
+}
+#answer4{
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 1;
+}
+
+#question{
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+}
+
+
 
 .btn:hover {
     background-color: var(--lgreen);
@@ -145,20 +165,20 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; 
-    background-color: var(--dgreen);
+    outline: 0;
+    background-color: var(--lgreen);
     color: var(--light);
-    font-family: 'Fascinate';
-    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
 
 .CorrectWrongarea { /*row of 4 with space in between*/
     display: grid;
-    grid-template-columns: 4fr;  
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 10px 10px; 
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px 10px;
     font-family: 'Caveat';
-    font-size: 22px;
+    font-size: 25px;
 }
 
 #CorrectWrong {
@@ -167,3 +187,12 @@ header {
     grid-row: 1 / span 2;
 }
 
+/*quiz*/
+
+.visible{
+    display: block;
+}
+
+.invisible{
+    display: none
+}
